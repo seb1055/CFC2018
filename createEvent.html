@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Geocoding Service</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #floating-panel {
+        position: absolute;
+        top: 10px;
+        left: 25%;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+        text-align: center;
+        font-family: 'Roboto','sans-serif';
+        line-height: 30px;
+        padding-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="floating-panel">
+      <label>Name</label>
+      <input  id="name" type="textbox" >
+      <label>Address</label>
+      <input id="address" type="textbox" >
+      <label>Help Needed</label>
+      <input  id="help" type="textbox" name="">
+      <input id="submit" type="button" value="submit">
+
+    </div>
+
+    <div id="demo">
+    </div>
+
+    <script>
+
+      function initMap() {
+
+        var geocoder = new google.maps.Geocoder();
+
+        document.getElementById('submit').addEventListener('click', function() {
+          geocodeAddress(geocoder);
+        });
+      }
+
+      function geocodeAddress(geocoder) {
+        var address = document.getElementById('address').value;
+        geocoder.geocode({'address': address}, function(results, status) {
+          if (status === 'OK') {
+            console.log(results[0].geometry.location.lat()+ "," + results[0].geometry.location.lng())
+            getInfo();
+
+          } else {
+            alert('Geocode was not successful for the following reason: ' + status);
+          }
+        });
+      }
+
+
+      function getInfo(lat,long){
+
+          var name = document.getElementById('name').value;
+          var help = document.getElementById('help').value;
+
+
+
+      
+
+
+      console.log(name + "," + help);
+      window.location.href="index.html"
+      }
+
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDq32L2_m8OwV39WLk4CPQ0xyU8_HZBOyo&callback=initMap">
+    </script>
+  </body>
+</html>

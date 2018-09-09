@@ -1,0 +1,56 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "icon": "http://maps.google.com/mapfiles/kml/pal3/icon1.png",
+        "description": "RedCross Event 20 Voulenteers Needed"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.877039,
+          37.332592
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "icon": "http://maps.google.com/mapfiles/kml/pal3/icon2.png",
+        "description": "Housing Avaliable"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.884421,
+          37.337029
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "icon": "http://maps.google.com/mapfiles/kml/pal3/icon0.png",
+        "description": "Food Avaliable for Victims"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -121.883970,
+          37.337403
+        ]
+      }
+    }
+  ]
+}

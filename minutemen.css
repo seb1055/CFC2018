@@ -1,0 +1,74 @@
+#WelcomeText {
+	padding-left: 1em;
+}
+
+
+    .TopPanels {
+        font-family: "Verdana";
+        /**padding: 0.438em 0.25em;**/
+        float:left;
+        width:20%;
+        margin-left:29%;
+        text-align: center;
+        border-radius: 3.571em;
+        text-decoration: none;
+        color: #FFF;
+        background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+        background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+        transition: .4s;
+    }
+    
+    .TopPanels:hover {
+        background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+        background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    }
+
+    .TopPanels2 {
+        font-family: "Verdana";
+        /**padding: 0.438em 0.25em;**/
+        float:left;
+        width:20%;
+        margin-left:2%;
+        text-align: center;
+        border-radius: 3.571em;
+        text-decoration: none;
+        color: #FFF;
+        background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+        background-image: linear-gradient(45deg, #FFC107 0%, #ff8b5f 100%);
+        transition: .4s;
+    }
+    }
+    
+    .TopPanels2:hover {
+        background-image: -webkit-linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+        background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    }
+
+input[type=text]{
+    background-color: #E5E9ED;
+    border: 0 solid rgba(208,208,208,0.50);
+    border-radius: 2.2px;
+}
+
+#map{
+    height: 100%;
+
+}
+
+
+#TopBar {
+	padding-bottom:6em;
+	background-color: white;
+}
+
+h1 {
+	color:maroon;
+}
+
+a {
+	color:black;
+	text-decoration: none;
+}
+text {
+	
+}
